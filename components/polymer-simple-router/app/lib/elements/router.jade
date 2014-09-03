@@ -1,0 +1,162 @@
+polymer-element(name="sr-router", \attributes="state root")
+  template
+    style.
+      @host {
+        * {
+          display: none;
+        }
+      }
+  script.
+    Polymer('sr-router', {
+      root: '/',
+      state: null,
+      states: {},
+      stateNames: [],
+      appview: null,
+      history: null,
+
+      get data () {
+        var state = this.state;
+        return state && state.getParams(location.params);
+      },
+
+      ready: function () {
+        setTimeout((function () {
+          this
+          .initHistory()
+          .initAppView()
+          .initEventListener()
+          .initStates()
+          .initState();
+        }).bind(this));
+      },
+
+      initHistory: function () {
+        var history = document.createElement('sr-history');
+        history.root = this.root;
+        this.history = history;
+        return this;
+      },
+
+      initAppView: function () {
+        var appview = document.getElementsByTagName('sr-appview')[0];
+        if (!appview) {
+          throw new Error('<sr-appview> not found.');
+        }
+        this.appview = appview;
+        return this;
+      },
+
+      initEventListener: function () {
+        this.history.addEventListener('urlChanged', (function (e) {
+          var state;
+          state = this.checkState(e.detail.fragment);
+          this.changeState(state);
+        }).bind(this));
+        return this;
+      },
+
+      initStates: function () {
+        var states = this.states;
+        var names = this.stateNames;
+        var stateElements = this.getElementsByTagName('sr-state');
+        var i, len = stateElements.length;
+        var state;
+        for (i = 0; i < len; i += 1) {
+          state = stateElements[i];
+          states[state.name] = state;
+          names.push(state.name);
+        }
+        names.sort(function (a, b) {
+          return a.length - b.length;
+        });
+        return this;
+      },
+
+      initState: function () {
+        this.state = this.checkCurrentState();
+        var title = document.getElementsByTagName('title')[0];
+        var url = location.pathname;
+        title = (title && title.textContent) || '';
+        this.history.pushState({url: url}, title, url);
+        return this;
+      },
+
+      checkCurrentState: function () {
+        var state = this.checkState(this.history.fragment);
+        return state;
+      },
+
+      checkState: function (path) {
+        path = path.replace(/^https?:\/\/[^\/]*/, '');
+        var state;
+        this.eachState(function () {
+          if (this.test(path)) {
+            state = this;
+            return false;
+          }
+        });
+        return state;
+      },
+
+      eachState: function (fn) {
+        var states = this.states;
+        var state, i;
+        for (i in states) {
+          state = states[i];
+          if (fn.call(state, i, state) === false) {
+            break;
+          }
+        }
+        return this;
+      },
+
+      go: function (name, data) {
+        var state = this.states[name];
+        if (state) {
+          this.changeState(state, data);
+        }
+        return this;
+      },
+
+      changeState: function (state, data) {
+        if (this.state === state) {
+          return this;
+        }
+        this.fire('sr-state-change', {state: state});
+        state.getTemplate((function (doc) {
+          var title = doc.getElementsByTagName('title')[0];
+          var url = state.getUrl(data);
+
+          title = (title && title.textContent) || '';
+          document.title = title;
+
+          var appview = this.getViewElement(state, doc);
+          var viewElement = this.getViewElement(state);
+
+          viewElement.unbindAll();
+          viewElement.innerHTML = (appview && appview.innerHTML) || '';
+          Platform.flush();
+
+          this.history.pushState({url: url}, title, url);
+
+          this.state = state;
+          this.fire('sr-state-changed', {state: state, doc: doc});
+        }).bind(this));
+        return this;
+      },
+
+      getViewElement: function (state, doc) {
+        var len = state.info.names.length;
+        var view = doc || document;
+        var tmp;
+        do {
+          tmp = view.getElementsByTagName('sr-appview')[0];
+          if (!tmp) {
+            break;
+          }
+          view = tmp;
+        } while (--len);
+        return view;
+      }
+    });

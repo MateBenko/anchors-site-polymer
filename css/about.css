@@ -1,0 +1,110 @@
+/* line 2, ../scss/about.scss */
+core-toolbar {
+  background: #000;
+}
+
+/* line 5, ../scss/about.scss */
+.center {
+  text-align: center;
+}
+
+/* line 8, ../scss/about.scss */
+.item {
+  line-height: 26px;
+}
+
+/* line 11, ../scss/about.scss */
+:host {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 14, ../scss/about.scss */
+.navElement {
+  color: #c3dcfa;
+  overflow: hidden;
+  margin-left: 40px;
+}
+
+/* line 19, ../scss/about.scss */
+core-submenu::shadow .navElement {
+  margin-left: 0px;
+}
+
+/* line 22, ../scss/about.scss */
+#partners {
+  font-size: 0;
+}
+
+/* line 25, ../scss/about.scss */
+.logoContainer {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 32, ../scss/about.scss */
+#partners {
+  background: url("http://anchors.3pixel.hu/img/partners/bg_blur2.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 110px 0;
+  background-repeat: no-repeat;
+}
+
+/* line 39, ../scss/about.scss */
+#about p {
+  color: #eaeaea;
+}
+
+/* line 42, ../scss/about.scss */
+#partners > div:first-of-type {
+  margin: 40px 0;
+}
+
+/* line 45, ../scss/about.scss */
+#partners > div:first-of-type .logoContainer {
+  width: 25%;
+}
+@media (max-width: 800px) {
+  /* line 45, ../scss/about.scss */
+  #partners > div:first-of-type .logoContainer {
+    width: 50%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  /* line 45, ../scss/about.scss */
+  #partners > div:first-of-type .logoContainer {
+    width: 100%;
+  }
+}
+
+/* line 55, ../scss/about.scss */
+#partners > div:last-of-type {
+  margin: 40px 12.5%;
+}
+@media (max-width: 800px) {
+  /* line 55, ../scss/about.scss */
+  #partners > div:last-of-type {
+    margin: 40px 0;
+  }
+}
+
+/* line 61, ../scss/about.scss */
+#partners > div:last-of-type .logoContainer {
+  width: 33%;
+}
+@media (max-width: 800px) {
+  /* line 61, ../scss/about.scss */
+  #partners > div:last-of-type .logoContainer {
+    width: 50%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  /* line 61, ../scss/about.scss */
+  #partners > div:last-of-type .logoContainer {
+    width: 100%;
+  }
+}

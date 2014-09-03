@@ -1,0 +1,29 @@
+<link rel="import" href="components/polymer/polymer.html">
+<link rel="import" href="components/core-ajax/core-ajax.html">
+
+<polymer-element name="team-service" attributes="team">
+    <template>
+        <style>
+            :host {
+                display: none;
+            }
+        </style>
+        <core-ajax id="ajax"
+                   auto
+                   url="team.json"
+                   on-core-response="{{teamLoaded}}"
+                   handleAs="json">
+        </core-ajax>
+    </template>
+    <script>
+        Polymer('team-service', {
+            created: function() {
+                this.team = [];
+            },
+            teamLoaded: function() {
+                // Make a copy of the loaded data
+                this.team = this.$.ajax.response.slice(0);
+            }
+        });
+    </script>
+</polymer-element>

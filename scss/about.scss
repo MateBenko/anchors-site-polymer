@@ -1,0 +1,72 @@
+
+core-toolbar{
+  background: #000;
+}
+.center{
+  text-align: center;
+}
+.item{
+  line-height: 26px;
+}
+:host{
+  font-family: 'Roboto', sans-serif;
+}
+.navElement{
+  color:#c3dcfa;
+  overflow: hidden;
+  margin-left: 40px;
+}
+core-submenu::shadow .navElement {
+  margin-left: 0px;
+}
+#partners{
+  font-size: 0;
+}
+.logoContainer{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+
+}
+#partners{
+  background: url("http://anchors.3pixel.hu/img/partners/bg_blur2.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 110px 0;
+  background-repeat: no-repeat;
+}
+#about p{
+  color: rgb(234, 234, 234);
+}
+#partners > div:first-of-type{
+  margin: 40px 0;
+}
+#partners > div:first-of-type .logoContainer{
+  width: 25%;
+  @media(max-width: 800px){
+    width: 50%;
+    margin: 20px 0;
+  }
+  @media(max-width: 400px){
+    width: 100%;
+  }
+}
+#partners > div:last-of-type{
+  margin: 40px 12.5%;
+  @media(max-width: 800px){
+    margin: 40px 0;
+  }
+}
+#partners > div:last-of-type .logoContainer{
+  width: 33%;
+  @media(max-width: 800px){
+    width: 50%;
+    margin: 20px 0;
+  }
+  @media(max-width: 400px){
+    width: 100%;
+  }
+}
+
+

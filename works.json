@@ -1,0 +1,204 @@
+[
+    {
+        "id": "3key",
+        "title": "3Key",
+        "thumb": "3key.png",
+        "text" : "3key was our sister company. We created this piece of design for them that mirrors their brand, and enthusiasm towards the Digital Marketing era. By the time they were fused into Anchors.io. Better Together!",
+        "link" : "http://3key.anchors.io",
+        "folder": "http://anchors.3pixel.hu/img/portfolio/3key/",
+        "images" : [
+            "3key-1.jpg",
+            "3key-2.jpg",
+            "3key-3.png",
+            "3key-4.png",
+            "3key-5.jpg"
+        ],
+        "involvement": [
+            "Logo Design",
+            "Visual Brand",
+            "Graphic Design",
+            "Responsive Design",
+            "Front-end Development"
+        ],
+        "technology": [
+            "HTLM",
+            "SASS(CSS)",
+            "jQuery",
+            "TWIG Templating"
+        ]
+    },
+    {
+        "id": "qlm",
+        "title": "QLM",
+        "thumb": "qlm.png",
+        "text" : "A hungarian based logistic company challenged us, whether we could give their website a face-lift that embrace their new brand.",
+        "link" : "http://qlm.hu",
+        "folder": "http://anchors.3pixel.hu/img/portfolio/qlm/",
+        "images" : [
+            "qlm-1.png",
+            "qlm-2.jpg",
+            "qlm-3.jpg",
+            "qlm-4.jpg",
+            "qlm-5.jpg",
+            "qlm-6.jpg",
+            "2_qlm.jpg"
+        ],
+        "involvement": [
+            "Visual Brand",
+            "UI-UX Design",
+            "Graphic Design",
+            "Front-end Development",
+            "Back-end Development",
+            "Print Media",
+            "Search Engine Optimisation"
+        ],
+        "technology": [
+            "HTML",
+            "SASS(CSS)",
+            "jQuery",
+            "TWIG templating",
+            "Google Analytics"
+        ]
+
+    },
+    {
+        "id": "joszaki",
+        "title": "Jószaki",
+        "thumb": "joszaki.png",
+        "text" : "We were hired to redesign the joszaki.hu web-page. A multi-platform responsive design was the goal. Their site is still under renewal phase. Hope we can see the new design in action as soon as possible!",
+        "link" : "",
+        "folder": "http://anchors.3pixel.hu/img/portfolio/joszaki/",
+        "images" : [
+            "joszaki-1.png",
+            "joszaki-2.jpg"
+        ],
+        "involvement": [
+            "Graphic Design",
+            "Responsive Design"
+        ],
+        "technology": [
+            "HTML",
+            "SASS(CSS)",
+            "jQuery",
+            "Liquid Templating"
+        ]
+    },
+    {
+        "id": "wtrade",
+        "title": "wTrade",
+        "thumb": "wtrade.png",
+        "text" : "One of our good friend from US hired us to prepare a good-looking trendy brochure with sort of info-graphic goodies that will charm their clients. They loved it!",
+        "link" : "",
+        "folder": "http://anchors.3pixel.hu/img/portfolio/wtrade/",
+        "images" : [
+            "wtrade-1.jpg",
+            "wtrade-2.jpg",
+            "wtrade-3.png"
+        ],
+        "involvement": [
+            "Print Media"
+        ],
+        "technology": [
+            "Photoshop",
+            "Illustrator",
+            "InDesign"
+        ]
+    },
+    {
+        "id": "bkb",
+        "title": "VHB",
+        "thumb": "bkb.png",
+        "text" : "We were hired by Zoltán Balogh & Wolfgang Leis brand specialist to design a responsive website for they company VelvetHammer.",
+        "link" : "http://velvethammer.eu",
+        "folder": "http://anchors.3pixel.hu/img/portfolio/bkb/",
+        "images" : [
+            "bkb-1.png",
+            "bkb-2.png",
+            "bkb-3.jpg"
+        ],
+        "involvement": [
+            "Visual Brand",
+            "Graphic Design",
+            "Responsive Design",
+            "Search Engine Optimisation"
+        ],
+        "technology": [
+            "HTML",
+            "SASS(CSS)",
+            "jQuery",
+            "TWIG templating",
+            "Google Analytics"
+        ]
+    },
+    {
+        "id": "autsoft",
+        "title": "Autsoft",
+        "thumb": "autsoft.png",
+        "text" : "In our early ages in 2012, we had been hired, to create a visual brand and a responsive design for a department at the Budapest University of Technology. This department is excellent in mobile development. Here you can check our concepts how we approached their vision.",
+        "link" : "",
+        "folder": "http://anchors.3pixel.hu/img/portfolio/autsoft/",
+        "images" : [
+            "autsoft-1.jpg",
+            "autsoft-2.jpg",
+            "autsoft-3.jpg",
+            "autsoft-4.jpg"
+
+        ],
+        "involvement": [
+            "Visual Brand",
+            "Logo Design",
+            "Illustrations",
+            "Graphic Design",
+            "Front-end Development"
+        ],
+        "technology": [
+            "HTML",
+            "SASS(CSS)",
+            "jQuery"
+        ]
+    },
+    {
+        "id": "flow",
+        "title": "Flow",
+        "thumb": "flow.png",
+        "text" : "Yeah... we are a web-design agency... but sometimes we can't stand to create some offline stuff. One of our clients who has a band called Flow, and owns a official position of a rock star in it, hired us the create this cover design to him.",
+        "link" : "",
+        "folder": "http://anchors.3pixel.hu/img/portfolio/flow/",
+        "images" : [
+            "flow-1.png",
+            "flow-2.png",
+            "flow-3.png"
+        ],
+        "involvement": [
+            "Print Media"
+        ],
+        "technology": [
+            "Graphic Design"
+        ]
+    },{
+    "id": "magyarhangya",
+    "title": "Magyarhangya",
+    "thumb": "magyarhangya.png",
+    "text": "This was our very first work! Our job was to create some special easily recognizable unique design harmonizing with their team. The guys who asked us to a create this dynamic, vivid page are responsible for spreading the best alternative a movies/films in our country. If you are fan of not-mainstream films, movies or documentaries, you have to check out their programs.",
+    "link": "http://magyarhangya.hu",
+    "folder": "http://anchors.3pixel.hu/img/portfolio/magyarhangya/",
+    "images": [
+        "magyarhangya-1.jpg",
+        "magyarhangya-2.jpg",
+        "magyarhangya-3.jpg"
+    ],
+    "involvement": [
+        "Graphic Design",
+        "Web Design",
+        "Back-end Development"
+    ],
+    "technology": [
+        "HTML",
+        "SASS(CSS)",
+        "jQuery",
+        "PHP",
+        "Codeigniter"
+    ]
+}
+
+]

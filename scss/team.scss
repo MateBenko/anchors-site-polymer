@@ -1,0 +1,16 @@
+team-member{
+  display: inline-block;
+  font-size: 0;
+  width: 100%;
+  text-align: center;
+  @media(min-width: 550px){
+    width: 50%;
+  }
+  @media(min-width: 850px){
+    width: 33%;
+  }
+
+}
+:host{
+  font-size: 0;
+}

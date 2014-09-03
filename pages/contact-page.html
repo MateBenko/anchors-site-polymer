@@ -1,0 +1,78 @@
+
+<link rel="import" href="../components/polymer/polymer.html">
+<link rel="import" href="../components/firebase-element/firebase-element.html">
+
+
+<polymer-element name="contact-page" attributes="selected">
+    <template>
+        <link rel="stylesheet" href="../css/screen.css"/>
+        <link rel="stylesheet" href="../css/app.css"/>
+        <link rel="stylesheet" href="../css/contact.css"/>
+        <style>
+
+        </style>
+        <div id="contact">
+            <div class="row">
+                <firebase-element id="base" data="{{data}}" ref="{{ref}}" location="https://popping-fire-9997.firebaseio.com/" keys="{{keys}}"></firebase-element>
+
+                <h1>REQUEST A CONSULTATION</h1>
+
+                <div class="formGroup">
+                    <input type="text" value="{{localdata.name}}" placeholder="Name"/>
+                </div>
+                <div class="formGroup">
+                    <input type="text" value="{{localdata.email}}" placeholder="E-mail"/>
+                </div>
+                <div class="formGroup">
+                    <input type="text" value="{{localdata.phone}}" placeholder="Phone"/>
+                </div>
+                <div class="formGroup">
+                    <input type="text" value="{{localdata.project}}" placeholder="Project"/>
+                </div>
+                <div on-tap="{{submit}}" class="button">
+                    <span class="moreInfo">Submit request</span>
+                </div>
+            </div>
+          <div class="social">
+            <div class="col_chat">
+              <div class="contact-info" itemscope="">
+                <div class="">
+                  <span class="label">Tax no.:</span>
+                  <span class="details2" itemprop="tax">24871444-2-06</span>
+                  <span class="label">Address:</span>
+                  <span class="details2" itemprop="add">Budapest, Karinthy Frigyes street 11</span>
+                  <span class="label">Phone:</span>
+                  <span class="details" itemprop="tel">+36 30 27 44 998</span>
+                  <span class="label">E-mail:</span>
+                  <span class="details" itemprop="email">hello@anchors.io</span>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+      </div>
+        <script>
+
+        </script>
+    </template>
+    <script>
+        Polymer('contact-page',{
+
+            localdata: {
+                email: "",
+                name: "",
+                phone: "",
+                project: ""
+            },
+            submit: function(){
+                this.ref.push(this.localdata);
+                this.localdata.email = "";
+                this.localdata.name = "";
+                this.localdata.phone = "";
+                this.localdata.project = "";
+            }
+
+        })
+    </script>
+</polymer-element>

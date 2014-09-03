@@ -1,0 +1,50 @@
+[
+    {
+       "img": "http://anchors.3pixel.hu/img/team/puffy.png",
+       "name":  "GERGŐ NAGY",
+       "text": "CEO, Devops Fanatic,",
+       "text2": "Automated Tester, Co-Founder"
+    },
+    {
+       "img": "http://anchors.3pixel.hu/img/team/zsolti.png",
+       "name":  "ZSOLT SULYOK",
+       "text": "UI/UX Designer, Front-end Developer,",
+       "text2": "Graphics Designer, Co-Founder"
+    },
+    {
+       "img": "http://anchors.3pixel.hu/img/team/ghingis.png",
+       "name":  "CSABA BENKŐ",
+       "text": "Back-End and Front-End Developer,",
+       "text2": "Software Engineer, Co-Founder"
+    },
+    {
+       "img": "http://anchors.3pixel.hu/img/team/rambi.png",
+       "name":  "ZOLTÁN BÖRCSÖK",
+       "text": "Organizational Developer,",
+       "text2": "Career Coach, Advisor"
+    },
+    {
+       "img": "http://anchors.3pixel.hu/img/team/mate.png",
+       "name":  "Máté benkő",
+       "text": "Sitebuilder,",
+       "text2": "Front-End Developer"
+    },
+    {
+       "img": "http://anchors.3pixel.hu/img/team/marci.png",
+       "name":  "MÁRTON SZŐTS",
+       "text": "Graphics Designer, UI/UX designer,",
+       "text2": "Sitebuilder"
+    },
+    {
+       "img": "http://anchors.3pixel.hu/img/team/dosa.png",
+       "name":  "BÁLINT DÓSA",
+       "text": "Project Manager,",
+       "text2": "Sales, SEO"
+    },
+    {
+       "img": "http://anchors.3pixel.hu/img/team/django.png",
+       "name":  "django",
+       "text": "Social co-worker"
+    }
+
+]

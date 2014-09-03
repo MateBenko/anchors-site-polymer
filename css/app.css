@@ -1,0 +1,130 @@
+/* line 1, ../scss/app.scss */
+.menuIcon {
+  fill: white;
+  display: block;
+}
+@media (min-width: 1400px) {
+  /* line 1, ../scss/app.scss */
+  .menuIcon {
+    display: none;
+  }
+}
+
+/* line 8, ../scss/app.scss */
+.content {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 15, ../scss/app.scss */
+.content .intro {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 21, ../scss/app.scss */
+.content .intro:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin-right: -5.5px;
+}
+/* line 28, ../scss/app.scss */
+.content .intro > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 34, ../scss/app.scss */
+section {
+  padding: 60px 0;
+}
+
+/* line 37, ../scss/app.scss */
+.row {
+  padding: 0 110px;
+  margin: auto;
+}
+@media (max-width: 840px) {
+  /* line 37, ../scss/app.scss */
+  .row {
+    height: 100%;
+    padding: 0px;
+  }
+}
+
+/* line 45, ../scss/app.scss */
+h1 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #5d9cec;
+  font-size: 2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+/* line 55, ../scss/app.scss */
+.intro {
+  background: url("../img/hero.jpg");
+  text-align: center;
+  padding: 60px 0 70px;
+}
+/* line 59, ../scss/app.scss */
+.intro h1 {
+  text-transform: none;
+  font-weight: normal;
+  color: white;
+  font-size: 3.5em;
+  margin: 0.35em 0 1.2em;
+  -webkit-text-stroke: 1px white;
+}
+
+/* line 69, ../scss/app.scss */
+.moreInfo {
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+}
+/* line 83, ../scss/app.scss */
+.moreInfo:hover {
+  border: 1px solid #f1c410;
+  outline: 0;
+  color: black;
+  background-color: #f1c410;
+}
+
+/* line 90, ../scss/app.scss */
+#about {
+  background: url("../img/stardust.png");
+}
+/* line 92, ../scss/app.scss */
+#about .row > div {
+  margin-left: 16.66%;
+  width: 66.66%;
+}
+/* line 96, ../scss/app.scss */
+#about .about-text {
+  font-size: 32px;
+  font-weight: 200;
+  margin: 0 0 35px;
+  text-align: center;
+  line-height: 1.6;
+}

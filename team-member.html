@@ -1,0 +1,42 @@
+<link rel="import" href="components/polymer/polymer.html">
+<link rel="import" href="components/core-item/core-item.html">
+
+<polymer-element name="team-member" attributes="">
+    <template>
+        <style>
+          ::content img{
+            margin-bottom: 25px;
+            width: 220px;
+            border-radius: 100%;
+          }
+          ::content h2{
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 0 0 15px;
+            font-size: 21px;
+            letter-spacing: 1px;
+            color: #5d9cec;
+          }
+          ::content p{
+            line-height: 20px;
+            color: #bbbbbb;
+            font-size: 14px;
+            margin: 0 0 25px;
+          }
+
+        </style>
+
+        <div class="member-content">
+            <content class="memberImg" select="img"></content>
+            <content class="memberName" select="h2"></content>
+            <content class="memberText" select="p"></content>
+        </div>
+        
+    </template>
+    <script>
+        Polymer('team-member', {
+
+
+        });
+    </script>
+</polymer-element>

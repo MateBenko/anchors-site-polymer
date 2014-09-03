@@ -1,0 +1,44 @@
+
+
+<link rel="import" href="../components/polymer/polymer.html">
+<link rel="import" href="../team-member.html">
+<link rel="import" href="../team-service.html">
+
+
+<polymer-element name="team-page" attributes="selected">
+    <template>
+        <style>
+            .membersWrapper{
+                display: inline-block;
+                padding: 50px 0;
+            }
+        </style>
+        <link rel="stylesheet" href="../css/screen.css"/>
+        <link rel="stylesheet" href="../css/app.css"/>
+        <link rel="stylesheet" href="../css/team.css"/>
+        <team-service team="{{team}}"></team-service>
+        <div class="membersWrapper">
+            <template repeat="{{member in team}}">
+                <team-member>
+                    <img src="{{member.img}}" alt=""/>
+                    <h2>{{member.name}}</h2>
+                    <p>{{member.text}}<br/>{{member.text2}}</p>
+                </team-member>
+            </template>
+        </div>
+        
+
+        <style>
+
+
+        </style>
+
+
+    </template>
+    <script>
+        Polymer('team-page',{
+            team: []
+
+        })
+    </script>
+</polymer-element>

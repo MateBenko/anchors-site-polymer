@@ -1,0 +1,69 @@
+
+
+<link rel="import" href="../components/polymer/polymer.html">
+<link rel="import" href="../works-page-service.html">
+
+
+<polymer-element name="works-page" attributes="selected">
+  <template>
+    <link rel="stylesheet" href="../css/screen.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+    <link rel="stylesheet" href="../css/works.css"/>
+    <style>
+
+    </style>
+
+    <works-page-service work="{{work}}" selected="{{selected}}"></works-page-service>
+      <section class="">
+          <div class="titleWrapper">
+                          <h1 class="title">{{ work.title }}</h1><a class="siteLink" hidden?="{{ ! work.link }}" id="" href="{{ work.link }}" target="_blank">Visit the site</a>
+          </div>
+          <div class="row">
+              <div class="row-element width-50">
+                  <h3 on-tap="{{log}}">
+                      Project
+                  </h3>
+                  <p>
+                      {{ work.text }}
+                  </p>
+
+              </div>
+              <div class="row-element width-25">
+                  <h3>
+                      Involvement
+                  </h3>
+                  <ul>
+                      <template repeat="{{involve in work.involvement}}">
+                          <li>{{ involve }}</li>
+                      </template>
+                  </ul>
+              </div>
+              <div class="row-element width-25">
+                  <h3>
+                      Technology
+                  </h3>
+                  <ul>
+                      <template repeat="{{tech in work.technology}}">
+                          <li>{{ tech }}</li>
+                      </template>
+                  </ul>
+              </div>
+          </div>
+          <div class="imgWrapper">
+              <template repeat="{{image in work.images}}">
+                  <img src="{{ work.folder + image }}" alt=""/>
+              </template>
+          </div>
+      </section>
+      <script>
+
+      </script>
+  </template>
+  <script>
+    Polymer('works-page',{
+      log: function(){
+        console.log(this.selected)
+      }
+    })
+  </script>
+</polymer-element>

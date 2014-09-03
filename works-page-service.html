@@ -1,0 +1,38 @@
+<link rel="import" href="components/polymer/polymer.html">
+<link rel="import" href="components/core-ajax/core-ajax.html">
+
+<polymer-element name="works-page-service" attributes="work selected">
+  <template>
+    <style>
+      :host {
+        display: none;
+      }
+    </style>
+    <core-ajax id="ajax"
+               auto
+               url="works.json"
+               on-core-response="{{worksLoaded}}"
+               handleAs="json">
+    </core-ajax>
+  </template>
+  <script>
+    Polymer('works-page-service', {
+      work: {},
+      created: function() {
+        this.works = [];
+      },
+      worksLoaded: function() {
+        // Make a copy of the loaded data
+        this.works = this.$.ajax.response.slice(0);
+        for (var i = 0; i < this.works.length; i++) {
+          if(this.works[i].id == this.selected){
+            this.work = this.works[i];
+          }
+          else if(i == this.works.length){
+            window.location.href = "/asdas";
+          }
+        }
+      }
+    });
+  </script>
+</polymer-element>

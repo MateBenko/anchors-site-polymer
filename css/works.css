@@ -1,0 +1,148 @@
+/* line 1, ../scss/works.scss */
+section {
+  background: #ffffff;
+}
+
+/* line 5, ../scss/works.scss */
+img {
+  padding: 20px 0;
+}
+
+/* line 8, ../scss/works.scss */
+.row {
+  font-size: 0;
+  padding-bottom: 100px;
+  padding-top: 80px;
+  background: url("http://anchors.3pixel.hu/img/stardust.png") center bottom;
+  color: white;
+  line-height: 1.7;
+}
+@media (max-width: 600px) {
+  /* line 8, ../scss/works.scss */
+  .row {
+    text-align: center;
+  }
+}
+
+/* line 19, ../scss/works.scss */
+.row-element {
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+/* line 25, ../scss/works.scss */
+.width-50 {
+  width: 50%;
+}
+@media (max-width: 600px) {
+  /* line 25, ../scss/works.scss */
+  .width-50 {
+    width: 80%;
+    text-align: left;
+    margin: 30px 0;
+  }
+  /* line 31, ../scss/works.scss */
+  .width-50 p {
+    max-width: 100%;
+  }
+}
+
+/* line 36, ../scss/works.scss */
+.width-25 {
+  width: 25%;
+}
+@media (max-width: 600px) {
+  /* line 36, ../scss/works.scss */
+  .width-25 {
+    width: 80%;
+    text-align: left;
+    margin: 30px 0;
+  }
+}
+
+/* line 44, ../scss/works.scss */
+h3 {
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5d9cec;
+  font-size: 1.1em;
+  line-height: 1.1;
+}
+
+/* line 52, ../scss/works.scss */
+p {
+  max-width: 80%;
+}
+
+/* line 55, ../scss/works.scss */
+.imgWrapper {
+  text-align: center;
+}
+
+/* line 58, ../scss/works.scss */
+.titleWrapper {
+  background: #343434;
+  margin-bottom: 70px;
+  text-align: left;
+  position: fixed;
+  top: 64px;
+  left: 256px;
+  right: 0;
+  height: 80px;
+}
+@media (max-width: 1400px) {
+  /* line 58, ../scss/works.scss */
+  .titleWrapper {
+    left: 0;
+  }
+}
+
+/* line 71, ../scss/works.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 75, ../scss/works.scss */
+.titleWrapper:before {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  content: "";
+  margin-right: -5.5px;
+}
+
+/* line 82, ../scss/works.scss */
+.titleWrapper h1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding-left: 5%;
+}
+
+/* line 90, ../scss/works.scss */
+.titleWrapper a {
+  font-size: 18px;
+  color: #829ebd;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5%;
+  padding: 6px 0;
+  height: 36px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* line 106, ../scss/works.scss */
+.titleWrapper a:hover {
+  color: #f1c410;
+  text-decoration: none;
+}

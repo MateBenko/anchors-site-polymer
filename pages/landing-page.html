@@ -1,0 +1,76 @@
+
+
+<link rel="import" href="../components/polymer/polymer.html">
+
+
+<polymer-element name="landing-page">
+  <template>
+    <link rel="stylesheet" href="../css/screen.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>
+    <style>
+
+
+
+      core-toolbar{
+        background: #000;
+      }
+      .center{
+        text-align: center;
+      }
+      .item{
+        line-height: 26px;
+      }
+      :host{
+        font-family: 'Roboto', sans-serif;
+      }
+      .navElement{
+        color:#c3dcfa;
+        overflow: hidden;
+        margin-left: 40px;
+      }
+      core-submenu::shadow .navElement {
+        margin-left: 0px;
+      }
+      .intro{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .intro:before{
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        content: "";
+        margin-right: -5.5px;
+      }
+      .intro__body{
+        display: inline-block;
+        vertical-align: middle;
+
+      }
+    </style>
+    <section class="intro">
+
+    <div class="intro__body">
+
+      <div>
+        <img class="intro__logo" src="../img/logo.png" alt="ANCHORS.IO"/>
+      </div>
+
+      <h1 class="intro__slogen">we live to make<br>results that matter</h1>
+
+      <div class="page-scroll buttomPadding">
+        <a href="/#/about" class="moreInfo">Tell me more</a>
+      </div>
+    </div>
+
+    </section>
+  </template>
+  <script>
+    Polymer('landing-page',{
+
+    })
+  </script>
+</polymer-element>
